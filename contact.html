@@ -1,0 +1,119 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Тихие страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Т</span>
+                <span class="logo-text">Тихие страницы</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="stories.html">Библиотека</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Контакты редакции</h1>
+                <p class="page-desc">Есть идея для рассказа, вопрос или предложение о сотрудничестве? Мы всегда на связи.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-container">
+                
+                <!-- ФОРМА (слева) -->
+                <form class="contact-form" action="#" method="POST">
+                    <h3 class="card-title" style="margin-bottom: 8px;">Напишите нам</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">Обычно мы отвечаем в течение одного рабочего дня.</p>
+                    
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email для ответа</label>
+                        <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" name="message" placeholder="Расскажите, что у вас на уме..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+
+                <!-- КОНТАКТНЫЕ ДАННЫЕ (справа) -->
+                <div class="contact-info">
+                    
+                    <!-- БЛОК ГЛАВНОГО РЕДАКТОРА -->
+                   <div class="editor-card">
+    <!-- ТВОЕ ФОТО: положи в папку images под именем my-photo.jpg -->
+    <img class="editor-avatar" src="images/my-photo.jpg" alt="Скворченков Егор Витальевич">
+    <div>
+        <h3 class="card-title" style="margin-bottom: 4px;">Скворченков Егор Витальевич</h3>
+        <p class="editor-role">Главный редактор</p>
+    </div>
+</div>
+                    <p class="contact-text">
+                        Лично курирую рубрику «Мистика» и отбираю лучшие истории для главной страницы. Пишите напрямую по любым вопросам.
+                    </p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">Email редакции:</span>
+                            <a href="mailto:editor@quietpages.ru">editor@quietpages.ru</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Телефон:</span>
+                            <a href="tel:+79615237996">+7 (961) 523-79-96</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Офис:</span>
+                            <span>Россия, г. Ейск, ул. Литературная, д. 1</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="socials">
+                        <a href="https://t.me/quiet_editor" target="_blank" class="social-link">Telegram</a>
+                        <a href="https://vk.com/quiet_pages" target="_blank" class="social-link">ВКонтакте</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 «Тихие страницы». Ейск, Россия. Все права защищены.</p>
+            <nav class="footer-nav" aria-label="Навигация в подвале">
+                <a href="index.html">Главная</a>
+                <a href="stories.html">Библиотека</a>
+                <a href="about.html">О проекте</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

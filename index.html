@@ -1,0 +1,135 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тихие страницы — истории и рассказы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Т</span>
+                <span class="logo-text">Тихие страницы</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="stories.html">Библиотека</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container hero-inner">
+                <p class="hero-kicker">Литературный проект</p>
+                <h1 class="hero-title">Истории, которые<br>стоит рассказать</h1>
+                <p class="hero-subtitle">
+                    Небольшая цифровая библиотека коротких рассказов о людях, городах и тишине между словами.
+                </p>
+                <div class="hero-actions">
+                    <a href="stories.html" class="btn btn-primary">Читать рассказы</a>
+                    <a href="about.html" class="btn btn-ghost">О проекте</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Избранные истории</h2>
+                    <a href="stories.html" class="link-more">Смотреть все →</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <article class="story-card">
+                        <!-- картинка: ночной старый трамвай на пустой улице -->
+                        <img class="card-cover" src="images/cover-tram.jpg" alt="Ночной старый трамвай" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Мистика</span>
+                            <h3 class="card-title">Последний трамвай</h3>
+                            <p class="card-excerpt">
+                                Он ходил по маршруту, которого не было на картах. И каждый пассажир знал, куда едет.
+                            </p>
+                            <a href="#" class="card-link" aria-label="Читать рассказ «Последний трамвай»">Читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <!-- картинка: чашка кофе на подоконнике утром -->
+                        <img class="card-cover" src="images/cover-coffee.jpg" alt="Чашка кофе на подоконнике" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Реализм</span>
+                            <h3 class="card-title">Кофе на подоконнике</h3>
+                            <p class="card-excerpt">
+                                История о двух людях, которые жили в соседних домах и никогда не встречались.
+                            </p>
+                            <a href="#" class="card-link" aria-label="Читать рассказ «Кофе на подоконнике»">Читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <!-- картинка: растение на космической станции -->
+                        <img class="card-cover" src="images/cover-orbit.jpg" alt="Растение на космической станции" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Фантастика</span>
+                            <h3 class="card-title">Сад на орбите</h3>
+                            <p class="card-excerpt">
+                                На станции, где не должно быть растений, расцвела яблоня. Никто не знал, кто её посадил.
+                            </p>
+                            <a href="#" class="card-link" aria-label="Читать рассказ «Сад на орбите»">Читать →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview section">
+            <div class="container about-preview-inner">
+                <div class="about-text">
+                    <h2 class="section-title">Почему «Тихие страницы»</h2>
+                    <p>
+                        Этот сайт — место для неспешного чтения. Здесь нет рекламы, бесконечной ленты и алгоритмов.
+                        Только короткие истории, которые можно прочитать за чашку кофе.
+                    </p>
+                    <p>
+                        Проект сделан как учебная работа, но с любовью к тексту и типографике.
+                    </p>
+                    <a href="about.html" class="btn btn-outline">Узнать больше</a>
+                </div>
+
+                <div class="about-visual">
+                    <!-- картинка: раскрытая книга на столе при тёплом свете -->
+                    <img class="about-visual-img" src="images/about-visual.jpg" alt="Раскрытая книга на столе" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 «Тихие страницы». Учебный проект.</p>
+            <nav class="footer-nav" aria-label="Навигация в подвале">
+                <a href="index.html">Главная</a>
+                <a href="stories.html">Библиотека</a>
+                <a href="about.html">О проекте</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

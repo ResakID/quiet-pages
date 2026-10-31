@@ -1,0 +1,135 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека — Тихие страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Если стили лежат в папке css, напиши css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка (обрати внимание: active теперь у Библиотеки) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Т</span>
+                <span class="logo-text">Тихие страницы</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="stories.html" class="active">Библиотека</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Красивый заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Библиотека</h1>
+                <p class="page-desc">Все истории, собранные в одном месте. Выбирай по настроению.</p>
+            </div>
+        </section>
+
+        <!-- Сетка карточек -->
+        <section class="catalog section">
+            <div class="container">
+                <div class="card-grid">
+
+                    <!-- 1. Трамвай (уже есть) -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-tram.jpg" alt="Ночной трамвай" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Мистика</span>
+                            <h3 class="card-title">Последний трамвай</h3>
+                            <p class="card-excerpt">Он ходил по маршруту, которого не было на картах.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <!-- 2. Кофе (уже есть) -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-coffee.jpg" alt="Кофе на подоконнике" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Реализм</span>
+                            <h3 class="card-title">Кофе на подоконнике</h3>
+                            <p class="card-excerpt">История о двух людях, которые жили в соседних домах.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <!-- 3. Орбита (уже есть) -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-orbit.jpg" alt="Сад на орбите" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Фантастика</span>
+                            <h3 class="card-title">Сад на орбите</h3>
+                            <p class="card-excerpt">На станции, где не должно быть растений, расцвела яблоня.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <!-- 4. НОВАЯ: Маяк -->
+                    <!-- Ищи в интернете: старый маяк в тумане, ночной маяк -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-lighthouse.jpg" alt="Старый маяк" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Драма</span>
+                            <h3 class="card-title">Смотритель маяка</h3>
+                            <p class="card-excerpt">Сорок лет он зажигал свет для тех, кто никогда не возвращался.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <!-- 5. НОВАЯ: Часы -->
+                    <!-- Ищи в интернете: винтажные карманные часы, старые часы на столе -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-watch.jpg" alt="Старые часы" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Новелла</span>
+                            <h3 class="card-title">Время на запястье</h3>
+                            <p class="card-excerpt">Часы деда остановились ровно в тот момент, когда он встретил бабушку.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <!-- 6. НОВАЯ: Дождь -->
+                    <!-- Ищи в интернете: капли дождя на стекле, размытый город за окном -->
+                    <article class="story-card">
+                        <img class="card-cover" src="images/cover-rain.jpg" alt="Дождь за окном" loading="lazy">
+                        <div class="card-body">
+                            <span class="card-tag">Мелодрама</span>
+                            <h3 class="card-title">Дождь в четверг</h3>
+                            <p class="card-excerpt">Она ждала его на остановке, но автобус так и не пришёл.</p>
+                            <a href="#" class="card-link">Читать →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 «Тихие страницы». Учебный проект.</p>
+            <nav class="footer-nav" aria-label="Навигация в подвале">
+                <a href="index.html">Главная</a>
+                <a href="stories.html">Библиотека</a>
+                <a href="about.html">О проекте</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

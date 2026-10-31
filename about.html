@@ -1,0 +1,107 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте — Тихие страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Правильный путь к стилям -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">Т</span>
+                <span class="logo-text">Тихие страницы</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="stories.html">Библиотека</a></li>
+                    <!-- Класс active теперь тут -->
+                    <li><a href="about.html" class="active">О проекте</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">О проекте</h1>
+                <p class="page-desc">Идея, смыслы и принципы, стоящие за «Тихими страницами».</p>
+            </div>
+        </section>
+
+        <!-- Манифест -->
+        <section class="section">
+            <div class="container about-manifesto">
+                <h2 class="section-title">Зачем нужен этот сайт</h2>
+                <p class="manifesto-lead">
+                    В мире бесконечных лент, коротких видео и уведомлений так легко забыть о простом человеческом слове. «Тихие страницы» — это попытка создать островок спокойствия в интернете.
+                </p>
+                <p>
+                    Мы верим, что короткий рассказ способен заставить задуматься сильнее, чем многотомный роман. Иногда достаточно нескольких абзацев, чтобы увидеть знакомый город с другой стороны или поверить в чудо.
+                </p>
+            </div>
+        </section>
+
+        <!-- Принципы (3 колонки) -->
+        <section class="section bg-elevated">
+            <div class="container">
+                <h2 class="section-title text-center" style="margin-bottom: 40px;">Наши принципы</h2>
+                <div class="principles-grid">
+                    
+                    <div class="principle-card">
+                        <span class="principle-num">01</span>
+                        <h3 class="card-title">Только текст</h3>
+                        <p>Никаких отвлекающих баннеров, всплывающих окон или автоплея. Вы наедине с историей.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <span class="principle-num">02</span>
+                        <h3 class="card-title">Уважение к читателю</h3>
+                        <p>Удобная типографика, тёмная тема для чтения ночью и бережное отношение к вашему времени.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <span class="principle-num">03</span>
+                        <h3 class="card-title">Красота простоты</h3>
+                        <p>Минималистичный дизайн, который не кричит, а мягко сопровождает вас по страницам.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Цитата -->
+        <section class="section">
+            <div class="container">
+                <blockquote class="quote-block">
+                    <p class="quote-text">«Истории — это не просто слова на бумаге. Это способ прожить чужую жизнь, оставаясь собой».</p>
+                    <footer class="quote-author">— Из редакторской колонки</footer>
+                </blockquote>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 «Тихие страницы». Учебный проект.</p>
+            <nav class="footer-nav" aria-label="Навигация в подвале">
+                <a href="index.html">Главная</a>
+                <a href="stories.html">Библиотека</a>
+                <a href="about.html">О проекте</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
