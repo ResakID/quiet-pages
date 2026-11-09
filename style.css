@@ -704,3 +704,119 @@ ul {
         gap: 40px;
     }
 }
+/* ============================================
+   АДАПТИВНЫЙ CSS-СЛАЙДЕР
+   ============================================ */
+.slider-section {
+    background-color: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+}
+
+.slider-container input {
+    display: none; /* Скрываем радиокнопки */
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* 3 слайда по 100% */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 33.333%;
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.slide h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.slide p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+/* Цвета фонов для слайдов (можно заменить на картинки) */
+.slide-content-1 { background: linear-gradient(135deg, #1b2a3a, #3a2f1f); }
+.slide-content-2 { background: linear-gradient(135deg, #1f1a2e, #2a2318); }
+.slide-content-3 { background: linear-gradient(135deg, #2a1f1a, #1a2a24); }
+
+/* Навигация (точки) */
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.slider-nav label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-nav label:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* МАГИЯ СЛАЙДЕРА: Двигаем ленту при нажатии на радиокнопки */
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-33.333%); }
+#slide3:checked ~ .slides { transform: translateX(-66.666%); }
+
+/* Активная точка */
+#slide1:checked ~ .slider-nav label:nth-child(1),
+#slide2:checked ~ .slider-nav label:nth-child(2),
+#slide3:checked ~ .slider-nav label:nth-child(3) {
+    background: var(--accent);
+    transform: scale(1.2);
+}
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: auto; /* Сдвигаем влево */
+    margin-left: 20px;
+}
+.theme-btn:hover { border-color: var(--accent); }
+
+/* Светлая тема (переопределяем переменные) */
+body.light-theme {
+    --bg: #f8f9fa;
+    --bg-elevated: #ffffff;
+    --text: #333333;
+    --text-muted: #666666;
+    --border: #dddddd;
+}
