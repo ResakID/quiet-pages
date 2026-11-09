@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -24,7 +24,8 @@
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
-            </nav>
+          <button id="theme-toggle" class="theme-btn" title="Сменить тему">🌙</button> 
+ </nav>
         </div>
     </header>
 
@@ -42,6 +43,38 @@
                     <a href="about.html" class="btn btn-ghost">О проекте</a>
                 </div>
             </div>
+<!-- АДАПТИВНЫЙ СЛАЙДЕР -->
+        <section class="slider-section section">
+            <div class="container">
+                <h2 class="section-title">Новые поступления</h2>
+                <div class="slider-container">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    
+                    <div class="slides">
+                        <div class="slide slide-content-1">
+                            <h3>«Последний трамвай»</h3>
+                            <p>Мистическая история о маршруте, которого нет на картах.</p>
+                        </div>
+                        <div class="slide slide-content-2">
+                            <h3>«Сад на орбите»</h3>
+                            <p>Фантастика о том, как на космической станции расцвела яблоня.</p>
+                        </div>
+                        <div class="slide slide-content-3">
+                            <h3>«Кофе на подоконнике»</h3>
+                            <p>Тёплая история о двух людях, живущих в соседних домах.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-nav">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
         </section>
 
         <section class="featured section">
@@ -55,7 +88,7 @@
 
                     <article class="story-card">
                         <!-- картинка: ночной старый трамвай на пустой улице -->
-                        <img class="card-cover" src="cover-tram.jpg" alt="Ночной старый трамвай" loading="lazy">
+                        <img class="card-cover" src="images/cover-tram.jpg" alt="Ночной старый трамвай" loading="lazy">
                         <div class="card-body">
                             <span class="card-tag">Мистика</span>
                             <h3 class="card-title">Последний трамвай</h3>
@@ -68,7 +101,7 @@
 
                     <article class="story-card">
                         <!-- картинка: чашка кофе на подоконнике утром -->
-                        <img class="card-cover" src="cover-coffee.jpg" alt="Чашка кофе на подоконнике" loading="lazy">
+                        <img class="card-cover" src="images/cover-coffee.jpg" alt="Чашка кофе на подоконнике" loading="lazy">
                         <div class="card-body">
                             <span class="card-tag">Реализм</span>
                             <h3 class="card-title">Кофе на подоконнике</h3>
@@ -81,7 +114,7 @@
 
                     <article class="story-card">
                         <!-- картинка: растение на космической станции -->
-                        <img class="card-cover" src="cover-orbit.jpg" alt="Растение на космической станции" loading="lazy">
+                        <img class="card-cover" src="images/cover-orbit.jpg" alt="Растение на космической станции" loading="lazy">
                         <div class="card-body">
                             <span class="card-tag">Фантастика</span>
                             <h3 class="card-title">Сад на орбите</h3>
@@ -112,7 +145,7 @@
 
                 <div class="about-visual">
                     <!-- картинка: раскрытая книга на столе при тёплом свете -->
-                    <img class="about-visual-img" src="about-visual.jpg" alt="Раскрытая книга на столе" loading="lazy">
+                    <img class="about-visual-img" src="images/about-visual.jpg" alt="Раскрытая книга на столе" loading="lazy">
                 </div>
             </div>
         </section>
@@ -130,6 +163,6 @@
             </nav>
         </div>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
